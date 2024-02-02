@@ -11,7 +11,7 @@ let UserImput
 let sum = 0;
 
 for (i = 0; i < 10; i++){
-    UserImput = 10*(prompt("Inserisci un numero"));
+    UserImput = (prompt("Inserisci un numero"));
 
     sum = UserImput;
 
