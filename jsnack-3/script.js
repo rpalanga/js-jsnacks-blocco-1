@@ -1,12 +1,24 @@
 
-// L’utente inserisce due parole in successione, con due prompt.
+// Crea un array vuoto.
 
-// Il software stampa prima la parola più corta, poi la parola più lunga.
+// Chiedi per 6 volte all’utente di inserire un numero,
 
-let firstWord = prompt("Quanto è quotato?")
+// Solo se è dispari inseriscilo nell’array.
 
-let secondtWord = prompt("Siamo sicuri?")
+// Stampa a schermo il contenuto dell'array
 
-console.log(firstWord)
-console.log(secondWord)
+let oddNumbers = [];
+
+for (i = 0; i < 6; i++){
+    let userChoices;
+    userChoices = (prompt("Inserisci numeri"))
+
+    if(userChoices % 2 !== 0){
+        oddNumbers.push(userChoices)
+        
+        document.getElementById("result").innerHTML = `Questi sono i numeri dispari ${oddNumbers}`
+    }
+}
+
+
 
