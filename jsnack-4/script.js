@@ -1,12 +1,43 @@
 
-// L’utente inserisce due parole in successione, con due prompt.
+// Chiedi un numero di 4 cifre all’utente
 
-// Il software stampa prima la parola più corta, poi la parola più lunga.
+// e calcola la somma di tutte le cifre che compongono il numero.
 
-let firstWord = prompt("Quanto è quotato?")
+let userChoice = prompt("inserisci un numero a 4 cifre");
 
-let secondtWord = prompt("Siamo sicuri?")
+if (userChoice.length === 4 && !isNaN(userChoice)) {
+    let sum = 0;
 
-console.log(firstWord)
-console.log(secondWord)
+    for( let i = 0; i < userChoice.length; i++){
+        
+        sum += +userChoice[i];
+    }
+    document.getElementById("result").innerHTML = `Questa è la somma dei numeri inseriti ${sum}`;
+
+}
+
+
+
+
+
+
+
+
+
+// let userChoice = []
+// let userNumber = prompt ("inserisci un numero a 4 cifre");
+// userChoice.push(userNumber)
+
+// let sum = 0;
+
+// for (let i = 0; i < userChoice.length; i++){
+//     sum = userChoice[i] + userNumber;
+//     console.log(sum)
+
+//     // document.getElementById("result").innerHTML = `La somma è ${}`
+// }
+
+
+
+
 
