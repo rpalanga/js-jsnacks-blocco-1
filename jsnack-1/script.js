@@ -5,8 +5,28 @@
 
 let firstWord = prompt("Quanto è quotato?")
 
-let secondtWord = prompt("Siamo sicuri?")
+let secondWord = prompt("Siamo sicuri?")
+
+
+
+
 
 console.log(firstWord)
 console.log(secondWord)
+
+
+if (firstWord.length > secondWord.length){
+
+    
+
+    document.getElementById("result").innerHTML = firstWord + secondWord;
+
+    
+} else  {
+    
+    document.getElementById("result").innerHTML = secondWord + firstWord;
+
+
+}
+
 
