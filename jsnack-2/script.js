@@ -1,12 +1,19 @@
 
-// L’utente inserisce due parole in successione, con due prompt.
+// Il software deve chiedere per 10 volte all’utente di inserire un numero.
 
-// Il software stampa prima la parola più corta, poi la parola più lunga.
+// Il programma stampa la somma di tutti i numeri inseriti.
 
-let firstWord = prompt("Quanto è quotato?")
 
-let secondtWord = prompt("Siamo sicuri?")
+let UserImput 
+// Number(prompt("Somma i numeri"));
 
-console.log(firstWord)
-console.log(secondWord)
 
+let sum = 0;
+
+for (i = 0; i < 10; i++){
+    UserImput = 10*(prompt("Inserisci un numero"));
+
+    sum = UserImput;
+
+    document.getElementById("result").innerHTML = `La somma dei numeri è ${sum}`
+}
