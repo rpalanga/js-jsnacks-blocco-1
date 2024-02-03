@@ -1,12 +1,25 @@
 
-// L’utente inserisce due parole in successione, con due prompt.
+// Stampa il cubo dei primi N numeri,
 
-// Il software stampa prima la parola più corta, poi la parola più lunga.
+// (partendo da 1, il numero N indicato dall'utente è compreso)
 
-let firstWord = prompt("Quanto è quotato?")
+// dove N è un numero indicato dall’utente.
 
-let secondtWord = prompt("Siamo sicuri?")
+let userChoice = Number(prompt("Indica un numero")); 
 
-console.log(firstWord)
-console.log(secondWord)
+let resultCube = document.getElementById("result");
 
+
+for (let i = 0; i <= userChoice; i++){
+
+    let userCube = (userChoice ** 3 && i ** 3);
+    
+    resultCube.innerHTML += `questi è il cubo ${ userCube }, ""`;
+
+    
+    
+    
+
+
+    
+}
