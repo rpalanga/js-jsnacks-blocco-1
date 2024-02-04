@@ -1,12 +1,30 @@
+// Calcola la somma e la media dei primi 10 numeri.
 
-// L’utente inserisce due parole in successione, con due prompt.
+let sumAndAvarege = [1,2,3,4,5,6,7,8,9,10];
 
-// Il software stampa prima la parola più corta, poi la parola più lunga.
+let sum = 0;
 
-let firstWord = prompt("Quanto è quotato?")
 
-let secondtWord = prompt("Siamo sicuri?")
 
-console.log(firstWord)
-console.log(secondWord)
+for (let i = 0; i < sumAndAvarege.length; i++){
+
+    sum += parseInt(sumAndAvarege[i]);
+    
+    
+
+    
+}
+
+let Avg = sum/sumAndAvarege.length;
+
+console.log(Avg)
+
+console.log(sum)
+
+document.getElementById("result").innerHTML = `La somma degli elementi è ${ sum} <br> la media dei primi dieci numeri è ${ Avg}`
+
+
+
+
+
 
